@@ -9,3 +9,237 @@ License: GNU General Public License v2 or later
 Text Domain: WHP
 Tags: harrypotter, harry potter, wizards, wizard, hp, wizard world
 */
+
+/* Interprete somente a altura do elemento, ignorando a margin, padding e border do elemento */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .TopFaixa {
+        float: left;
+        width: 100%;
+        height: 90px;
+        background: #000;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+    .BottomFaixa {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .BottomFaixa a{
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #cc9900;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .BottomFaixa a:hover{
+        color: #ffc61a;
+    }
+    .Logomarca {
+        position: absolute;
+        top: 10px;
+        z-index: 100000;
+    }
+    .Logomarca img {
+        max-height: 70px;
+        width: auto;
+    }
+
+    .BotaoMobile {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .TopFaixa {
+        float: left;
+        width: 100%;
+        height: 120px;
+        background: #000;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+    .BottomFaixa {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .BottomFaixa a{
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #cc9900;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .BottomFaixa a:hover{
+        color: #ffc61a;
+    }
+    .Logomarca {
+        position: absolute;
+        top: 20px;
+        z-index: 100000;
+    }
+    .Logomarca img {
+        max-height: 80px;
+        width: auto;
+    }
+
+    .BotaoMobile {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+    .TopFaixa {
+        float: left;
+        width: 100%;
+        height: 160px;
+        background: #000;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+    .BottomFaixa {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .BottomFaixa a{
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #cc9900;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .BottomFaixa a:hover{
+        color: #ffc61a;
+    }
+    .Logomarca {
+        position: absolute;
+        top: 20px;
+        z-index: 100000;
+    }
+    .Logomarca img {
+        max-height: 120px;
+        width: auto;
+    }
+
+    .BotaoMobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .TopFaixa {
+        float: left;
+        width: 100%;
+        height: 160px;
+        background: #000;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+
+    .BottomFaixa {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .BottomFaixa a{
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #cc9900;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .BottomFaixa a:hover{
+        color: #ffc61a;
+    }
+
+    .Logomarca {
+        position: absolute;
+        top: 20px;
+        z-index: 100000;
+    }
+    .Logomarca img {
+        max-height: 120px;
+        width: auto;
+    }
+
+    .BotaoMobile {
+        display: none;
+    }
+
+    .Busca {
+        position: absolute;
+        width: 60%;
+        top: 50px;
+        left: 40%;
+    }
+    .Busca input[type='text']{
+        height: 40px;
+        width: 60%;
+        font-size: 17px;
+        color: #ffc61a;
+        background: #000;
+    }
+    .Busca input[type='submit']{
+        height: 40px;
+        width: 20%;
+        font-size: 17px;
+        background: #000;
+        color: #ffc61a;
+        font-weight: bold;
+        text-align: center;
+    }
+}
