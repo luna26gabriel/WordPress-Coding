@@ -38,3 +38,11 @@
             </form>
         </div>
 
+        <div class="BotaoLogin">
+            <a href="">Login</a>
+        </div>
+
+        <div class="BotaoCadastrese">
+            <a href="">Login</a>
+        </div>
+
